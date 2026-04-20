@@ -211,34 +211,6 @@ const projects = [
      AI 영상 시네마틱
   ───────────────────────────────────────────────────────── */
   {
-    id: 5,
-    type: 'video',
-    category: 'cinematic',
-    categoryLabel: '단편 애니메이션',
-    title: '페어리웜',
-    desc: '모녀 갈등과 화해라는 보편적 서사를 판타지 세계관으로 풀어낸 단편 애니메이션.',
-    thumbnail: 'https://nahyun1993.github.io/portfolio3/images/Thumbnails/단편애니메이션_페어리웜.png',
-    badge: 'team',
-    badgeLabel: '👥 팀 프로젝트',
-    tools: ['Nano Banana', 'Kling', 'ElevenLabs', 'Midjourney'],
-    driveId: '1_Ufz9Cl5DFbKYD_R6MPaxhATJ8vLGei5',
-    orientation: 'horizontal',
-    scenes: [
-      'https://nahyun1993.github.io/portfolio3/images/주요장면/페어리웜/페어리웜 주요장면_01.png',
-      'https://nahyun1993.github.io/portfolio3/images/주요장면/페어리웜/페어리웜 주요장면_02.png',
-      'https://nahyun1993.github.io/portfolio3/images/주요장면/페어리웜/페어리웜 주요장면_03.png',
-      'https://nahyun1993.github.io/portfolio3/images/주요장면/페어리웜/페어리웜 주요장면_04.png',
-      'https://nahyun1993.github.io/portfolio3/images/주요장면/페어리웜/페어리웜 주요장면_05.png',
-      'https://nahyun1993.github.io/portfolio3/images/주요장면/페어리웜/페어리웜 주요장면_06.png'
-    ],
-    brief: '15세 소녀의 사춘기 갈등과 단절을 이세계 전이라는 메타포로 시각화함. 낯선 세계에서의 조력자 탐험 서사를 거쳐 엄마의 진심을 깨닫고 재회하는 구조. 팀원이 각자 이미지를 생성할 경우 발생하는 캐릭터 불일치를 해결하기 위해, 씬 일괄 생성 파이프라인 구축을 기획함.',
-    process: [
-      { title: '컨셉 아트 및 톤앤매너 기획', desc: '미드저니를 활용해 메인 캐릭터의 베이스 디자인과 색감 가이드를 수립하여 팀원 간 시각적 합의점을 확보함.' },
-      { title: '자동화 파이프라인(빌더) 아키텍처 설계', desc: '구글 AI 스튜디오 환경에서 씬 일괄 생성 빌더를 자체 구축. 나노바나나 API를 자동 호출하여 씬을 일괄 생성하도록 설계하여, 수동 프롬프트 입력 시간을 생략하고 고품질 에셋을 확보함.' },
-      { title: '캐릭터 음성 아이덴티티 및 일관성 확보', desc: '팀원들의 각기 다른 오디오 녹음 소스를 일레븐랩스로 보이스 체인지하여 메인 캐릭터 고유의 음성의 일관성을 확보함.' }
-    ]
-  },
-  {
     id: 6,
     type: 'video',
     category: 'cinematic',
@@ -632,7 +604,7 @@ const techStack = [
 const SECTIONS = [
   { id: 'about',      label: 'ABOUT',            num: null },
   { id: 'commercial', label: 'AI 영상 — 커머셜',   num: '01', count: 7 },
-  { id: 'cinematic',  label: 'AI 영상 — 시네마틱',  num: '02', count: 3 },
+  { id: 'cinematic',  label: 'AI 영상 — 시네마틱',  num: '02', count: 2 },
   { id: 'ai-image',   label: 'AI 이미지',          num: '03' },
   { id: 'liveaction', label: '실사 숏폼',           num: '04', count: 6 },
   { id: 'photography',label: 'Photography',        num: '05' },
