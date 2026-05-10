@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    LEE NAHYUN Portfolio — script.js
    Sidebar Layout (migrated from portfolio3 carousel)
    ============================================================ */
@@ -666,8 +666,9 @@ const SECTIONS = [
   { id: 'artfilm',    label: 'AI 영상 — 아트필름',  num: '02', count: 1 },
   { id: 'commercial', label: 'AI 영상 — 커머셜',   num: '03', count: 7 },
   { id: 'liveaction', label: '오리지널 영상 — 실사',  num: '04', count: 7 },
-  { id: 'ai-image',   label: '비주얼 아트 — 이미지 & 사진', num: '05' },
-  { id: 'dashboard',  label: '대시보드 & 웹앱',     num: '06', count: 4 }
+  { id: 'ai-image',   label: 'AI 이미지',          num: '05' },
+  { id: 'photography',label: 'Photography',        num: '06' },
+  { id: 'dashboard',  label: '대시보드 & 웹앱',     num: '07', count: 4 }
 ];
 
 /* ── State ── */
@@ -812,8 +813,7 @@ function renderImageSection() {
     ...characterFiles.map(f => ({ src: `https://nahyun1993.github.io/portfolio3/images/AI Image/character/${f}`, cat: 'character', label: '캐릭터 일관성' })),
     ...conceptArtFiles.map(f => ({ src: `https://nahyun1993.github.io/portfolio3/images/AI Image/Concept Art/${f}`, cat: 'concept-art', label: '컨셉 아트' })),
     ...portraitFiles.map(f => ({ src: `https://nahyun1993.github.io/portfolio3/images/AI Image/Portrait/${f}`, cat: 'portrait', label: '인물 이미지' })),
-    ...productImageFiles.map(f => ({ src: `https://nahyun1993.github.io/portfolio3/images/AI Image/Product Image/${f}`, cat: 'product-image', label: '제품 이미지' })),
-    ...photographyFiles.map(f => ({ src: `https://nahyun1993.github.io/portfolio3/images/AI Image/Photography/${f}`, cat: 'photography', label: 'Photography' }))
+    ...productImageFiles.map(f => ({ src: `https://nahyun1993.github.io/portfolio3/images/AI Image/Product Image/${f}`, cat: 'product-image', label: '제품 이미지' }))
   ];
 
   const filters = [
@@ -821,16 +821,15 @@ function renderImageSection() {
     { key: 'character', label: '캐릭터 일관성' },
     { key: 'concept-art', label: '컨셉 아트' },
     { key: 'portrait', label: '인물 이미지' },
-    { key: 'product-image', label: '제품 이미지' },
-    { key: 'photography', label: 'Photography' }
+    { key: 'product-image', label: '제품 이미지' }
   ];
 
   section.innerHTML = `
     <div class="section-header">
       <div class="section-num">05</div>
       <div>
-        <div class="section-title">비주얼 아트 - 이미지 & 사진</div>
-        <div class="section-subtitle">AI Generation & Live Photography</div>
+        <div class="section-title">AI 이미지</div>
+        <div class="section-subtitle">AI Image Generation</div>
       </div>
     </div>
     <div class="filter-tabs">
@@ -878,7 +877,7 @@ function renderPhotoSection() {
 
   section.innerHTML = `
     <div class="section-header">
-      <div class="section-num">05</div>
+      <div class="section-num">06</div>
       <div>
         <div class="section-title">Photography</div>
         <div class="section-subtitle">SONY A7M4 & Lightroom</div>
@@ -908,7 +907,7 @@ function renderDashboardSection() {
 
   section.innerHTML = `
     <div class="section-header">
-      <div class="section-num">06</div>
+      <div class="section-num">07</div>
       <div>
         <div class="section-title">대시보드 & 웹앱</div>
         <div class="section-subtitle">Tools, Dashboards & AI Systems</div>
@@ -1253,6 +1252,7 @@ function init() {
   renderVideoSection('commercial', '03', 'AI 영상 — 커머셜', 'Brand & Commercial AI Films', commercialList);
   renderVideoSection('liveaction', '04', '오리지널 영상 — 실사', 'Live-Action Contents', liveActionList);
   renderImageSection();
+  renderPhotoSection();
   renderDashboardSection();
 
   initStarCanvas();
