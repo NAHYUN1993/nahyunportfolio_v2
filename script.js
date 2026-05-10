@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    LEE NAHYUN Portfolio — script.js
    Sidebar Layout (migrated from portfolio3 carousel)
    ============================================================ */
@@ -14,10 +14,10 @@ const projects = [
     category: 'artfilm',
     categoryLabel: '아트필름',
     title: '내면세계',
-    desc: '치열하게 노력하고 연대하며 살아가고 있지만, 마음 깊은 곳에서는 햇살 좋은 잔디밖에서 걸정 없이 쉴는 평화로운 삶을 꼭꾸고 있습니다',
-    thumbnail: 'https://nahyun1993.github.io/portfolio3/images/Thumbnails/내면세계_숕네일.png',
-    badge: 'contest',
-    badgeLabel: '✨ 뽐에르 커뮤니티 과제',
+    desc: '치열하게 노력하고 연대하며 살아가고 있지만, 마음 깊은 곳에서는 햇살 좋은 잔디밭에서 걱정 없이 쉬는 평화로운 삶을 꿈꾸고 있습니다',
+    thumbnail: 'https://nahyun1993.github.io/portfolio3/images/Thumbnails/내면세계_썸네일.png',
+    badge: 'personal',
+    badgeLabel: '',  // no badge
     tools: ['Midjourney', 'Nano Banana', 'Kling'],
     driveId: '1lPxq8sHWjQTRwpkS9FEqfsgCi_zoY83V',
     orientation: 'horizontal',
@@ -29,7 +29,7 @@ const projects = [
       'https://nahyun1993.github.io/portfolio3/images/주요장면/내면세계/내면세계05.png',
       'https://nahyun1993.github.io/portfolio3/images/주요장면/내면세계/내면세계06.png'
     ],
-    brief: '기획의도: 내 내면 세계를 표현하는 뽐에르 커뮤니티 과제. 치열하게 노력하고 연대하며 살아가고 있지만, 마음 깊은 곳에서는 햇살 좋은 잔디밑에서 걱정 없이 쉴는 평화로운 삶을 꼭꾸는 내면세계를 표현함.',
+    brief: '기획의도: 내 내면 세계를 표현하는 뮈에르 커뮤니티 과제. 치열하게 노력하고 연대하며 살아가고 있지만, 마음 깊은 곳에서는 햇살 좋은 잔디밭에서 걱정 없이 쉬는 평화로운 삶을 꿈꾸는 내면세계를 표현함.',
     process: []
   },
   /* ─────────────────────────────────────────────────────────
@@ -447,7 +447,7 @@ const projects = [
     type: 'video',
     category: 'liveaction',
     categoryLabel: '오리지널 영상 - 실사',
-    title: '직원이 직접 짓는 농사 — 오리지널 리얼리티',
+    title: '비료 회사 직원의 농사짓기 프로젝트',
     desc: '외부 섭외의 한계를 돌파하기 위해 제작자가 직접 농사에 참여하는 오리지널 리얼리티 포맷을 기획. 단일 영상 최고 조회수 40만 회 달성 및 전사 \'도전왕\' 1위 수상한 채널 턴어라운드 프로젝트.',
     thumbnail: null,
     badge: 'company',
@@ -1283,3 +1283,6 @@ function init() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
+
+
