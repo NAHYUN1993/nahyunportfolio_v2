@@ -805,12 +805,14 @@ function renderSubtitleSection() {
         <div class="section-subtitle">Subtitle Design</div>
       </div>
     </div>
-    <div style="max-width:100%; margin:0 auto;">
-      <img src="${B}images/자막/자막디자인01.png" style="width:100%; border-radius:12px; margin-bottom:16px; border:1px solid rgba(255,255,255,0.06);" loading="lazy">
-      <img src="${B}images/자막/자막디자인02.png" style="width:100%; border-radius:12px; margin-bottom:32px; border:1px solid rgba(255,255,255,0.06);" loading="lazy">
-      <video src="${B}images/자막/제목.mp4" autoplay loop muted playsinline style="width:100%; border-radius:12px; margin-bottom:16px; background:#0a0f1a; border:1px solid rgba(255,255,255,0.06);"></video>
-      <video src="${B}images/자막/연참.mp4" autoplay loop muted playsinline style="width:100%; border-radius:12px; margin-bottom:16px; background:#0a0f1a; border:1px solid rgba(255,255,255,0.06);"></video>
-      <video src="${B}images/자막/그래프.mp4" autoplay loop muted playsinline style="width:100%; border-radius:12px; margin-bottom:32px; background:#0a0f1a; border:1px solid rgba(255,255,255,0.06);"></video>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 32px;">
+      <img src="${B}images/자막/자막디자인01.png" style="width:100%; height:100%; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.06);" loading="lazy">
+      <img src="${B}images/자막/자막디자인02.png" style="width:100%; height:100%; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.06);" loading="lazy">
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 32px;">
+      <video src="${B}images/자막/제목.mp4" autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover; border-radius:12px; background:#0a0f1a; border:1px solid rgba(255,255,255,0.06);"></video>
+      <video src="${B}images/자막/연참.mp4" autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover; border-radius:12px; background:#0a0f1a; border:1px solid rgba(255,255,255,0.06);"></video>
+      <video src="${B}images/자막/그래프.mp4" autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover; border-radius:12px; background:#0a0f1a; border:1px solid rgba(255,255,255,0.06);"></video>
     </div>
   `;
 }
