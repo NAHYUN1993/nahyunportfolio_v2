@@ -652,9 +652,10 @@ const SECTIONS = [
   { id: 'artfilm',    label: 'AI 영상 — 아트필름',  num: '02', count: 1 },
   { id: 'commercial', label: 'AI 영상 — 커머셜',   num: '03', count: 7 },
   { id: 'liveaction', label: '오리지널 영상 — 실사',  num: '04', count: 7 },
-  { id: 'ai-image',   label: 'AI 이미지',          num: '05' },
-  { id: 'photography',label: '오리지널 이미지 — 실사',  num: '06' },
-  { id: 'dashboard',  label: '대시보드 & 웹앱',     num: '07', count: 4 }
+  { id: 'subtitle',   label: '자막디자인',          num: '05' },
+  { id: 'ai-image',   label: 'AI 이미지',          num: '06' },
+  { id: 'photography',label: '오리지널 이미지 — 실사',  num: '07' },
+  { id: 'dashboard',  label: '대시보드 & 웹앱',     num: '08', count: 4 }
 ];
 
 /* ── State ── */
@@ -789,6 +790,32 @@ function createVideoCard(p) {
 }
 
 /* ═══════════════════════════════════════════════
+   RENDER: Subtitle Section
+═══════════════════════════════════════════════ */
+function renderSubtitleSection() {
+  const section = document.getElementById('subtitle');
+  if (!section) return;
+
+  const B = 'https://nahyun1993.github.io/portfolio3/';
+  section.innerHTML = `
+    <div class="section-header">
+      <div class="section-num">05</div>
+      <div>
+        <div class="section-title">자막디자인</div>
+        <div class="section-subtitle">Subtitle Design</div>
+      </div>
+    </div>
+    <div style="max-width:100%; margin:0 auto;">
+      <img src="${B}images/자막/자막디자인01.png" style="width:100%; border-radius:12px; margin-bottom:16px; border:1px solid rgba(255,255,255,0.06);" loading="lazy">
+      <img src="${B}images/자막/자막디자인02.png" style="width:100%; border-radius:12px; margin-bottom:32px; border:1px solid rgba(255,255,255,0.06);" loading="lazy">
+      <video src="${B}images/자막/제목.mp4" autoplay loop muted playsinline style="width:100%; border-radius:12px; margin-bottom:16px; background:#0a0f1a; border:1px solid rgba(255,255,255,0.06);"></video>
+      <video src="${B}images/자막/연참.mp4" autoplay loop muted playsinline style="width:100%; border-radius:12px; margin-bottom:16px; background:#0a0f1a; border:1px solid rgba(255,255,255,0.06);"></video>
+      <video src="${B}images/자막/그래프.mp4" autoplay loop muted playsinline style="width:100%; border-radius:12px; margin-bottom:32px; background:#0a0f1a; border:1px solid rgba(255,255,255,0.06);"></video>
+    </div>
+  `;
+}
+
+/* ═══════════════════════════════════════════════
    RENDER: AI Image Section
 ═══════════════════════════════════════════════ */
 function renderImageSection() {
@@ -812,7 +839,7 @@ function renderImageSection() {
 
   section.innerHTML = `
     <div class="section-header">
-      <div class="section-num">05</div>
+      <div class="section-num">06</div>
       <div>
         <div class="section-title">AI 이미지</div>
         <div class="section-subtitle">AI Image Generation</div>
@@ -863,7 +890,7 @@ function renderPhotoSection() {
 
   section.innerHTML = `
     <div class="section-header">
-      <div class="section-num">06</div>
+      <div class="section-num">07</div>
       <div>
         <div class="section-title">오리지널 이미지 - 실사</div>
         <div class="section-subtitle">SONY A7M4 & Lightroom</div>
@@ -893,7 +920,7 @@ function renderDashboardSection() {
 
   section.innerHTML = `
     <div class="section-header">
-      <div class="section-num">07</div>
+      <div class="section-num">08</div>
       <div>
         <div class="section-title">대시보드 & 웹앱</div>
         <div class="section-subtitle">Tools, Dashboards & AI Systems</div>
@@ -1237,6 +1264,7 @@ function init() {
   renderVideoSection('artfilm',    '02', 'AI 영상 — 아트필름', 'Art Films', artfilmList);
   renderVideoSection('commercial', '03', 'AI 영상 — 커머셜', 'Brand & Commercial AI Films', commercialList);
   renderVideoSection('liveaction', '04', '오리지널 영상 — 실사', 'Live-Action Contents', liveActionList);
+  renderSubtitleSection();
   renderImageSection();
   renderPhotoSection();
   renderDashboardSection();
