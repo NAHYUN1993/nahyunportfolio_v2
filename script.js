@@ -796,7 +796,7 @@ function renderSubtitleSection() {
   const section = document.getElementById('subtitle');
   if (!section) return;
 
-  const B = 'https://nahyun1993.github.io/portfolio3/';
+  const B = './';
   section.innerHTML = `
     <div class="section-header">
       <div class="section-num">05</div>
